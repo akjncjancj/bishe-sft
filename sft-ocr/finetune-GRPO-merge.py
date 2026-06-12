@@ -36,7 +36,7 @@ print(f"合并后数据集总条数：{len(ds)}")
  
 def get_prompt_rft_simple(example):
     
-    img_pil = example['image'].convert('RGB')  # 确保是RGB格式
+    img_pil = example['image'].convert('RGB')
 
     SYSTEM_PROMPT = r'''你是一个专业的OCR识别专家。请仔细识别图像中的文本内容，并准确输出。且仅输出最终识别的答案即可，不要多余解释和字符'''
     
@@ -121,7 +121,7 @@ peft_config = LoraConfig(
         "down_proj"
     ],
     bias="none",
-    lora_dropout=0.1,  # Conventional
+    lora_dropout=0.1, 
 )
  
 training_args = GRPOConfig(
