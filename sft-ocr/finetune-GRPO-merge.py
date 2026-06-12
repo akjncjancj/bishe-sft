@@ -105,7 +105,7 @@ def levenshtein_reward_func(completions, solution, **kwargs):
     return res
 
 
-output_dir="./output/lora-GRPO-model-w0.5-try2"
+output_dir="./output/lora-GRPO-model-w0.5"
 
 model.train()
 peft_config = LoraConfig(
@@ -144,7 +144,7 @@ training_args = GRPOConfig(
 
     max_grad_norm = 0.1,
     report_to = "none", 
-    output_dir = "./output/lora-GRPO-model-w0.5-try2",
+    output_dir = "./output/lora-GRPO-model-w0.5",
     disable_tqdm=False, 
 )
 training_args.max_prompt_length = 1024
