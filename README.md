@@ -47,7 +47,6 @@ After installation, run the following command. The installation is successful if
 ```bash
 llamafactory-cli version
 ```
-
 Expected output:
 ```
 ----------------------------------------------------------
@@ -56,5 +55,25 @@ Expected output:
 | Project page: https://github.com/hiyouga/LLaMA-Factory |
 ----------------------------------------------------------
 ```
+
+## Repository Structure
+After downloading the models, datasets and framework as described above, the overall project directory structure is shown below:
+SAID/
+├── SAID-v1/                  
+   ├── LLaMA-Factory             
+   ├── .py                     
+   ├── Qwen/
+   │   ├── Qwen3-VL-4B-Instruct            
+   └── data/          
+       ├── CTW
+       ├── ICDAR2013
+       ├── ICDAR2015
+       └── CASIA
+
+
+
+
+
+
 
 
