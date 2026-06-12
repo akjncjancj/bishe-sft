@@ -14,7 +14,10 @@ ds = load_dataset("Teklia/CASIA-HWDB2-line", cache_dir='./data/CASIA')
 ```
 
 ## Model(baseline)
-We take Qwen3-VL-4B as our primary baseline model. In addition, we also support gemma-3-4b and MiniCPM-V-2_6, Dataset download scripts can be found in download.py:```bash
+We take Qwen3-VL-4B as our primary baseline model. In addition, we also support gemma-3-4b and MiniCPM-V-2_6, Dataset download scripts can be found in download.py:
 ```bash
-
+from modelscope import snapshot_download
+#model_dir = snapshot_download('google/gemma-3-4b-it',cache_dir='./')
+# model_dir = snapshot_download('OpenBMB/MiniCPM-V-2_6',cache_dir='./')
+model_dir = snapshot_download('Qwen/Qwen3-VL-4B-Instruct',cache_dir="./")
 ```
