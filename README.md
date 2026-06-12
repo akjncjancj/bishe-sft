@@ -85,7 +85,26 @@ python llama-data-merge.py
 #move it
 mv OCR_data_7000 LLaMA-Factory/data
 ```
+then, Modify `dataset_info.json` under the `LLaMA-Factory/data` directory and add your custom dataset entry at the end of the file:
+```
+"mllm_med": {
 
+    "file_name": "OCR_data_7000/OCR_data_7000.json",
+    "formatting": "sharegpt",
+    "columns": {
+
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  }
+```
 
 
 
