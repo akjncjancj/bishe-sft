@@ -14,8 +14,8 @@ model = Gemma3ForConditionalGeneration.from_pretrained(
 processor = AutoProcessor.from_pretrained("google/gemma-3-4b-it")
 
 
-ds = load_dataset("./data/CASIA", cache_dir="./cache")
-data = ds["test"].select(range(30))
+ds = load_dataset("./data/CTW", cache_dir="./cache")
+data = ds["test"]
 
 
 def calculate_accuracy(test_data):
