@@ -112,6 +112,6 @@ Run the command below to launch the fine-tuning UI shown in the figure. Select t
 #run
 llamafactory-cli webui
 ```
-![LoRA微调UI界面](sft-ocr/train_ui.png)
+
 
 
