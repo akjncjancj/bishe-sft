@@ -46,6 +46,7 @@ After installation, run the following command. The installation is successful if
 
 ```bash
 llamafactory-cli version
+```
 
 Expected output:
 ----------------------------------------------------------
