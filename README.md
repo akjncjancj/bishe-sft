@@ -138,7 +138,7 @@ python finetune-GRPO-merge.py
 
 ## Stage 3: ICL
 
-### Run the baseline multimodal large model
+### • Run the baseline multimodal large model
 ```bash
 #Run Qwen3-VL for inference
 python data-inference.py
@@ -152,7 +152,7 @@ python infer-minicpm.py
 ```
 > **note**: You can freely switch datasets by simply modifying this line of code: ` ds = load_dataset("./data/CASIA", cache_dir="./cache")` 
 
-### Run the code after LoRA fine-tuning
+### • Run the code after LoRA fine-tuning
 Simply replace the model path `Qwen/Qwen3-VL-4B-Instruct` in `data-inference.py` with `Qwen/lora-qkvo-model`, then run the script:
 ```bash
 python data-inference.py
