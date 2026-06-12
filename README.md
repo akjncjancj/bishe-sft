@@ -158,6 +158,17 @@ Simply replace the model path `Qwen/Qwen3-VL-4B-Instruct` in `data-inference.py`
 python data-inference.py
 ```
 
+### • Run the model trained with GRPO
+```bash
+python data-inference-finetune.py
+```
+
+### • Run the model trained with GRPO
+
+
+
+
+
 
 
 
