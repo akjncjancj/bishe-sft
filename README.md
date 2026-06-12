@@ -136,7 +136,20 @@ python finetune-GRPO-merge.py
 
 
 
+## Stage 3: ICL
 
+### Run the baseline multimodal large model
+```bash
+#Run Qwen3-VL for inference
+python data-inference.py
+
+#Run gemma-3 for inference
+python infer-gemma.py
+
+#Run MiniCPM-V for inference
+python infer-minicpm.py
+
+```
 
 
 
