@@ -125,6 +125,7 @@ You may encounter some minor errors when running the UI interface, which can be 
 | Dropout             | 0.1          |
 | Epochs              | 2            |
 
+After LoRA fine-tuning completes, the corresponding LoRA weights will be generated. Use the `Export` function in the UI to merge these weights into the base model. We name the merged model `lora-qkvo-mode`l and store it under the Qwen folder.
 
 ## Stage 2: GRPO Fine-tuning
 
