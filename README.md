@@ -150,10 +150,13 @@ python infer-gemma.py
 python infer-minicpm.py
 
 ```
+> **note**: You can freely switch datasets by simply modifying this line of code: ` ds = load_dataset("./data/CASIA", cache_dir="./cache")` 
 
+### Run the code after LoRA fine-tuning
 
-
-
+```bash
+python data-inference.py
+```
 
 
 
