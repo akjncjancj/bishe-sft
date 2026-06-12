@@ -163,8 +163,10 @@ python data-inference.py
 python data-inference-finetune.py
 ```
 
-### • Run the model trained with GRPO
-
+### • Run the final model enhanced with ICL
+```bash
+python ICL-3yz.py
+```
 
 
 
