@@ -7,8 +7,8 @@ This repository is my outstanding undergraduate graduation project. You can repl
 We use four public open-source OCR datasets for model evaluation. The download methods are shown below:
 ```bash
 from datasets import load_dataset
-ds = load_dataset("MiXaiLL76/CTW1500_OCR")
-ds = load_dataset("MiXaiLL76/ICDAR2013_OCR")
-ds = load_dataset("MiXaiLL76/ICDAR2015_OCR")
-ds = load_dataset("Teklia/CASIA-HWDB2-line")
+ds = load_dataset("MiXaiLL76/CTW1500_OCR", cache_dir='./data/CTW')
+ds = load_dataset("MiXaiLL76/ICDAR2013_OCR", cache_dir='./data/ICDAR2013')
+ds = load_dataset("MiXaiLL76/ICDAR2015_OCR", cache_dir='./data/ICDAR2015')
+ds = load_dataset("Teklia/CASIA-HWDB2-line", cache_dir='./data/CASIA')
 ```
