@@ -106,8 +106,12 @@ then, Modify `dataset_info.json` under the `LLaMA-Factory/data` directory and ad
   }
 ```
 
-
-
+### Step 2: Run
+Run the command below to launch the fine-tuning UI shown in the figure. Select the corresponding model and parameters, then click `run` to start LoRA fine-tuning:
+```bash
+#run
+llamafactory-cli webui
+```
 
 
 
