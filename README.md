@@ -15,10 +15,10 @@ Then, Follow the sections Datasets and Base Models to download the corresponding
 We use four public open-source OCR datasets for model evaluation. The download methods are shown below:
 ```bash
 from datasets import load_dataset
-ds = load_dataset("MiXaiLL76/CTW1500_OCR", cache_dir='./data/CTW')
-ds = load_dataset("MiXaiLL76/ICDAR2013_OCR", cache_dir='./data/ICDAR2013')
-ds = load_dataset("MiXaiLL76/ICDAR2015_OCR", cache_dir='./data/ICDAR2015')
-ds = load_dataset("Teklia/CASIA-HWDB2-line", cache_dir='./data/CASIA')
+ds = load_dataset("MiXaiLL76/CTW1500_OCR", cache_dir='./data/CTW') 
+ds = load_dataset("MiXaiLL76/ICDAR2013_OCR", cache_dir='./data/ICDAR2013') 
+ds = load_dataset("MiXaiLL76/ICDAR2015_OCR", cache_dir='./data/ICDAR2015') 
+ds = load_dataset("Teklia/CASIA-HWDB2-line", cache_dir='./data/CASIA') 
 ```
 
 ## Model(baseline)
@@ -29,3 +29,19 @@ from modelscope import snapshot_download
 # model_dir = snapshot_download('OpenBMB/MiniCPM-V-2_6',cache_dir='./')
 model_dir = snapshot_download('Qwen/Qwen3-VL-4B-Instruct',cache_dir="./")
 ```
+
+## LLaMA-Factory
+We utilize the `LLaMA-Factory` framework for the LoRA fine-tuning stage, and the relevant configurations are as follows:
+```bash
+# Clone the repository
+git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
+
+cd LLaMA-Factory
+
+# Install dependencies
+pip install -e ".[torch,metrics]"
+```
+
+
+
+
