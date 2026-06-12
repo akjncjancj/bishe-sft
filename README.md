@@ -125,14 +125,13 @@ You may encounter some minor errors when running the UI interface, which can be 
 | Dropout             | 0.1          |
 | Epochs              | 2            |
 
-After LoRA fine-tuning completes, the corresponding LoRA weights will be generated. Use the `Export` function in the UI to merge these weights into the base model. We name the merged model `lora-qkvo-mode`l and store it under the Qwen folder.
+After LoRA fine-tuning completes, the corresponding LoRA weights will be generated. Use the `Export` function in the UI to merge these weights into the base model. We name the merged model `lora-qkvo-mode`l and store it under the `Qwen` folder.
 
 ## Stage 2: GRPO Fine-tuning
 After finishing the LoRA fine-tuning in Stage 1, we run the following command to perform GRPO reinforcement learning alignment for further improvement of the model's generalization and format compliance.
 ```bash
 python finetune-GRPO-merge.py
 ```
-
 > **note**: This code was executed on a single A800 GPU via AutoDL.
 
 
