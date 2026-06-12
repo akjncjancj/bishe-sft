@@ -47,14 +47,8 @@ After installation, run the following command. The installation is successful if
 ```bash
 llamafactory-cli version
 ```
-Expected output:
-```
-----------------------------------------------------------
-| Welcome to LLaMA Factory, version 0.9.6.dev0           |
-|                                                          |
-| Project page: https://github.com/hiyouga/LLaMA-Factory |
-----------------------------------------------------------
-```
+Expected output: Welcome to LLaMA Factory, version 0.9.6.dev0         
+
 
 ## Repository Structure
 After downloading the models, datasets and framework as described above, the overall project directory structure is shown below:
