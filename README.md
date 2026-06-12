@@ -6,7 +6,7 @@ This repository is my outstanding undergraduate graduation project. You can repl
 ## Usage
 ```bash
 git clone https://github.com/akjncjancj/bishe-sft.git
-cd sft-ocr
+cd bishe-sft/sft-ocr
 ```
 Then, Follow the sections Datasets and Base Models to download the corresponding datasets and models.
 
