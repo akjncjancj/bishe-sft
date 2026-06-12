@@ -77,7 +77,14 @@ bishe-sft/
 ## Stage 1: LoRA Fine-tuning
 ### Step 1: Dataset Preparation
 
+We first select 3000 samples from the CTW dataset and 4000 samples from the CASIA dataset, convert them to the required format, and then move the processed files to the correct directory:
+```bash
+#run
+python llama-data-merge.py
 
+#move it
+mv OCR_data_7000 LLaMA-Factory/data
+```
 
 
 
