@@ -42,6 +42,13 @@ cd LLaMA-Factory
 pip install -e ".[torch,metrics]"
 ```
 
-
-
+After installation, run the following command. The installation is successful if the output matches the expected result.
+```bash
+llamafactory-cli version
+```
+----------------------------------------------------------
+| Welcome to LLaMA Factory, version 0.9.6.dev0           |
+|                                                          |
+| Project page: https://github.com/hiyouga/LLaMA-Factory |
+----------------------------------------------------------
 
