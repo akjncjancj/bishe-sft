@@ -18,8 +18,8 @@ from grpo_trainer import Qwen2VLGRPOTrainer
 
 compute_dtype = getattr(torch, "float16")
 
-processor = AutoProcessor.from_pretrained("/root/autodl-tmp/Qwen/lora-model",use_fast=True)
-model = Qwen3VLForConditionalGeneration.from_pretrained("/root/autodl-tmp/Qwen/lora-model", 
+processor = AutoProcessor.from_pretrained("/root/autodl-tmp/Qwen/lora-qkvo-model",use_fast=True)
+model = Qwen3VLForConditionalGeneration.from_pretrained("/root/autodl-tmp/Qwen/lora-qkvo-model", 
                                              device_map='cuda', 
                                             torch_dtype=compute_dtype
                                                           )
