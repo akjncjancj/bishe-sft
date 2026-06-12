@@ -114,4 +114,24 @@ llamafactory-cli webui
 ```
 ![LoRA微调UI界面](sft-ocr/lora_ui.png)
 
+You may encounter some minor errors when running the UI interface, which can be resolved easily by referring to solutions from AI tools or CSDN. Meanwhile, we provide a set of effective hyperparameters for LoRA fine-tuning:
+| Parameter Name       | Value        |
+|----------------------|--------------|
+| Learning Rate       | 5e-5         |
+| Max Gradient Norm   | 1.0          |
+| Hardware Setup      | 8*RTX 3090   |
+| Cutoff Length       | 2048         |
+| Batch Size          | 4            |
+| Gradient Accumulation Steps | 8 |
+| Validation Split Ratio | 0.2      |
+| Learning Rate Scheduler | cosine  |
+| Warmup Steps        | 10           |
+| LoRA Rank           | 4            |
+| LoRA Alpha          | 8            |
+| Dropout             | 0.1          |
+| Epochs              | 2            |
+
+
+
+
 
