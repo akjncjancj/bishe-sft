@@ -167,7 +167,7 @@ python data-inference-finetune.py
 ```bash
 python ICL-3yz.py
 ```
-
+> **note**: You can adjust the number of ICL examples in the line `icl_examples = [train_data[i] for i in range(5)]` to investigate the impact of different values on accuracy.
 
 
 
