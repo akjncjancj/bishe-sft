@@ -58,8 +58,9 @@ Expected output:
 
 ## Repository Structure
 After downloading the models, datasets and framework as described above, the overall project directory structure is shown below:
-SAID/
-├── SAID-v1/                  
+```
+bishe-sft/
+├── sft-ocr/                  
    ├── LLaMA-Factory             
    ├── .py                     
    ├── Qwen/
@@ -69,6 +70,9 @@ SAID/
        ├── ICDAR2013
        ├── ICDAR2015
        └── CASIA
+```
+---
+
 
 
 
