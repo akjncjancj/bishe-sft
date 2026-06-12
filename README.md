@@ -49,11 +49,12 @@ llamafactory-cli version
 ```
 
 Expected output:
+```
 ----------------------------------------------------------
 | Welcome to LLaMA Factory, version 0.9.6.dev0           |
 |                                                          |
 | Project page: https://github.com/hiyouga/LLaMA-Factory |
 ----------------------------------------------------------
-
+```
 
 
