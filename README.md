@@ -8,6 +8,9 @@ This repository is my outstanding undergraduate graduation project. You can repl
 ```bash
 git clone https://github.com/akjncjancj/bishe-sft.git
 cd bishe-sft/sft-ocr
+conda create -n bishe python=3.10
+conda activate bishe
+pip install -r requirements.txt
 ```
 Then, Follow the sections Datasets and Base Models to download the corresponding datasets and models.
 
